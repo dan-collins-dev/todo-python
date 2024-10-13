@@ -7,4 +7,8 @@ class Todo:
         return f"Todo Name: {self.name}\nTodo Description: {self.description}\n"
     
     def __repr__(self):
-        return f"Todo({self.name}, {self.description})"
+        return (
+            f"Todo("
+            f"{repr(self.name)}, "
+            f"{repr(self.description)})"
+        )
